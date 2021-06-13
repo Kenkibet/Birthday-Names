@@ -45,11 +45,15 @@ document.onload=()=>{
             var gender = document.getElementById("gender").value;
 
             var dayOfWeek= calculateDayofWeek();
+            var name = "";
             if(gender.toLowerCase()=="female"){
-
+                name = akanFemaleNames[dayOfWeek];
             } else{
-
+                name = akanMaleName[dayOfWeek];
             }
+
+            document.getElementById("day-birth").innerText = `${day}/${month}/${year}`;
+            document.getElementById("akan-name").innerText = name;
 
         } else{
             document.getElementById("error").innerHTML="Invalid date";

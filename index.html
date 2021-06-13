@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <Html>
-    <head>Birthday names in ghana</head>
-    <body>
-        <div class="container">
-            <h1>Akan Names</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, nulla?</p>
-            <div class="div">
-                <form action="">
-                    <div class="div">
-                        <p>Date of Birth</p>
-                        <label for="year">Year
-                            <input type="number" name="year" id="yr" min="1990" max="2021">
-                        </label>
-                        <label for="month">Month
-                            <input type="number" name="month" id="mn"min="1" max="12">
-                        </label>
-                        <label for="day">Day
-                            <input type="number" name="day" id="dy" min="1" max="31">
-                        </label>                       
-                        
-                    </div>
-                    <div class="div">
-                        <label for="gender">Select your gender</label>
-                        <select name="gender" id="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>    
-                    </div>
-                    <button id="submit">Submit</button>
-                </form>
-            </div>
-            <div class="div">
-                <p id="day-birth"></p>
-                <p id="akan-name"></p>
-                <p id="error"></p>
-            </div>
-        </div>    
-        <script src="main.js"></script>    
-    </body>
+
+<head>
+    <title>Birthday names in Ghana</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Akan Names</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, nulla?</p>
+        <div class="div">
+            <form action="">
+                <div class="div">
+                    <p>Date of Birth</p>
+                    <label for="year">Year</br>
+                        <input type="number" name="year" id="yr" min="1990" max="2021">
+                    </label>
+                </div>
+                <div class="div">
+                    <label for="month">Month</br>
+                        <input type="number" name="month" id="mn" min="1" max="12">
+                    </label>
+                </div>
+                <div class="div">
+                    <label for="day">Day</br>
+                        <input type="number" name="day" id="dy" min="1" max="31">
+                    </label>
+                </div>
+                <div class="div">
+                    <label for="gender">Select your gender</label><br>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="div">
+            <p id="day-birth"></p>
+            <p id="akan-name"></p>
+            <p id="error"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
 </Html>

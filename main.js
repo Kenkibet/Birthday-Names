@@ -62,7 +62,7 @@ window.onload = () => {
  mod - is the modulus function ( % )
      */
 
-        var dayOfWeek = (((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (month + 1) / 10)) + day) % 7;
+        var dayOfWeek = ( ( (parseInt(cc/4)) -2*cc-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + day )%7;
         console.log("day of week", cc, yy);
 
         return parseInt(dayOfWeek - 1);

@@ -6,6 +6,12 @@ document.onload=()=>{
     var month = document.getElementById("month").value;
     var day = document.getElementById("day").value;
 
+    var btnSubmit = document.getElementById("submit");
+
+    btnSubmit.addEventListener('click', ()=>{
+        submit();
+    })
+
     function validateDate(){
         if(month=="1" || month=="3" || month=="5" || month=="7" || month=="8" || month=="10" || month=="12"){
             return true;

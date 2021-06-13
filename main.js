@@ -1,5 +1,4 @@
 window.onload = () => {
-    console.log("loaded");
     var akanMaleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var akanFemaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
@@ -62,8 +61,7 @@ window.onload = () => {
  mod - is the modulus function ( % )
      */
 
-        var dayOfWeek = ( ( (parseInt(cc/4)) -2*cc-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + day )%7;
-        console.log("day of week", cc, yy);
+        var dayOfWeek = ( ( (parseInt(cc/4)) -2*cc-1) + parseInt((5*yy/4) ) + parseInt((26*(month+1)/10)) + day )%7;        
 
         return parseInt(dayOfWeek - 1);
     }

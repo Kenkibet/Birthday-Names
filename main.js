@@ -32,7 +32,12 @@ document.onload=()=>{
     }
 
     function calculateDayofWeek(){
-        
+        var cc = year.substring(0,2);
+        var yy = year.substring(2,4);
+
+        var dayOfWeek = ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + DD ) % 7;
+
+        return dayOfWeek;
     }
 
     function submit(){

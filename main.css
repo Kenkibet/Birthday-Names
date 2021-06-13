@@ -1,0 +1,44 @@
+.container{
+    padding: 40px;
+    width: 75%;
+    margin: auto;
+}
+
+label{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px soild #696969;
+    outline: none;
+}
+
+.div{
+    margin: 10px;
+}
+
+select{
+    width: 50%;
+    padding: 10x;
+}
+
+button{
+    border-radius: 5px;
+    padding:10px  20px;
+    background-color: crimson;
+    outline: none;
+    width: 50%;
+}
+
+#error{
+    color: crimson;
+}
+
+#day-birth, #akan-name{
+    color: darkgreen;
+}

@@ -1,4 +1,5 @@
-document.onload=()=>{
+window.onload=()=>{
+    console.log("loaded");
     var akanMaleName = [ "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw","Kofi", "Kwame"];
     var akanFemaleNames = [ "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa","Afua", "Ama"];
 
@@ -8,7 +9,9 @@ document.onload=()=>{
 
     var btnSubmit = document.getElementById("submit");
 
-    btnSubmit.addEventListener('click', ()=>{
+    btnSubmit.addEventListener('click', (event)=>{
+        event.preventDefault();
+        console.log("clicked")
         submit();
     })
 

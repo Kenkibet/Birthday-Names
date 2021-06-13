@@ -78,8 +78,8 @@ window.onload = () => {
                 name = akanMaleName[dayOfWeek];
             }
 
-            document.getElementById("day-birth").innerText = `${day}/${month}/${year}`;
-            document.getElementById("akan-name").innerText = name;
+            document.getElementById("day-birth").innerText = `Your date of birth is ${day}/${month}/${year}`;
+            document.getElementById("akan-name").innerText = "Your Akan name is "+ name;
 
         } else {
             document.getElementById("error").innerHTML = "Invalid date";
